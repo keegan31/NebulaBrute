@@ -2,6 +2,8 @@
 ## Might Trigger Anti-DDoS Or Rate-Limit Systems Due To High Req/s 
 ## Tested On Termux (Lowest: 50 Req/s Highest:2200's Req/s )
 ## There Might Have Some Errors/Confusions In the code Especially: If The URL Redirects Everything Even If it Doesnt exist The Code Will Save it into Output File
+## Download Git Command
+git clone https://github.com/keegan31/NebulaBrute.git
 
 A multi-threaded, high-performance directory and file brute force tool written in C.
 
