@@ -1,0 +1,1 @@
+./nebula -u http://target.com/NBL -w wordlist.txt -t 100 -o working.txt -f forbidden.txt

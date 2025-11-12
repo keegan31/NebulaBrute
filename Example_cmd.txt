@@ -1,0 +1,62 @@
+./nbl -u "http://target.com/NBL" -w wordlist.txt
+./nbl -u "https://target.com/NBL" -w common_paths.txt
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 10
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 30
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 50
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 80
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -o results.txt
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 40 -o found_paths.txt
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -v
+./nbl -u "http://target.com/NBL" -w wordlist.txt -v -o detailed_results.txt
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -a
+./nbl -u "http://target.com/NBL" -w wordlist.txt -a -o all_results.txt
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 50 -v -o results.txt
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 80 -a -v -o scan_results.txt
+
+./nbl -u "http://target.com/api/NBL" -w api_words.txt -t 30
+./nbl -u "http://target.com/admin/NBL" -w admin_paths.txt -o admin_results.txt
+./nbl -u "http://target.com/images/NBL" -w image_names.txt
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -e ".php,.html,.txt" -o results.txt
+./nbl -u "http://target.com/NBL" -w wordlist.txt -e ".php" -t 40
+
+./nbl -u "http://target.com/NBL" -w common.txt
+./nbl -u "http://target.com/NBL" -w big.txt
+./nbl -u "http://target.com/NBL" -w directories.txt
+./nbl -u "http://target.com/NBL" -w custom_wordlist.txt
+
+./nbl -u "http://NBL.target.com" -w subdomains.txt -t 20
+./nbl -u "https://NBL.target.com" -w subdomains.txt -o subs.txt
+
+./nbl -u "http://example.com/NBL" -w common_paths.txt -t 30
+./nbl -u "https://test.site.org/api/NBL" -w api_endpoints.txt
+./nbl -u "http://192.168.1.1/NBL" -w router_paths.txt -o router_results.txt
+./nbl -u "http://localhost:8080/NBL" -w wordlist.txt -t 10
+
+./nbl -u "http://target.com/NBL" -w small_test.txt -t 100
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 1  # Single thread test
+
+./nbl -u "http://target.com:8080/NBL" -w wordlist.txt
+./nbl -u "https://target.com:8443/NBL" -w wordlist.txt
+./nbl -u "http://target.com:3000/NBL" -w wordlist.txt
+
+./nbl -u "http://target.com/wp-content/NBL" -w wp_files.txt -o wp_results.txt
+./nbl -u "http://target.com/backup/NBL" -w backup_names.txt
+./nbl -u "http://target.com/uploads/NBL" -w upload_paths.txt
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -o /sdcard/scan_results.txt
+./nbl -u "http://target.com/NBL" -w wordlist.txt -o ./results/$(date +%Y%m%d)_scan.txt
+
+./nbl -u "http://target.com/NBL" -w large_wordlist.txt -t 50  # Watch progress stats
+
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 20
+./nbl -u "http://target.com/NBL" -w wordlist.txt -t 40
+
+./nbl -u "http://target.com/NBL" -w common_dirs.txt -t 25 -o common_results.txt
+./nbl -u "http://target.com/NBL" -w sensitive_files.txt -t 15 -o sensitive_results.txt
+./nbl -u "http://target.com/NBL" -w config_files.txt -o config_results.txt
